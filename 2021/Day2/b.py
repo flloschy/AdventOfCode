@@ -13,4 +13,4 @@ for line in open("./2021/Day2/input.txt"):
         height += int(content[1])*aim
 print(forward*height)
 ###
-print(f"Time Taken: {time.perf_counter()-start}ms")
+print(f"Time Taken: {time.perf_counter()-start}s")

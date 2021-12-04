@@ -34,4 +34,4 @@ for i in range(len(N[0])):
         else: B = tempb
 print(int(A[0],2)*int(B[0],2))
 ###
-print(f"Time Taken: {time.perf_counter()-start}ms")
+print(f"Time Taken: {time.perf_counter()-start}s")

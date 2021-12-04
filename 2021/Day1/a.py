@@ -7,4 +7,4 @@ for line in open("./2021/Day1/input.txt"):
     last = int(line.strip())
 print(count-1)
 ###
-print(f"Time Taken: {time.perf_counter()-start}ms")
+print(f"Time Taken: {time.perf_counter()-start}s")

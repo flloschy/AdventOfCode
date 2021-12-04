@@ -9,4 +9,4 @@ for line in open("./2021/Day2/input.txt"):
     elif content[0] == "forward": forward += int(content[1])
 print(forward*height)
 ###
-print(f"Time Taken: {time.perf_counter()-start}ms")
+print(f"Time Taken: {time.perf_counter()-start}s")

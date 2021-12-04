@@ -14,4 +14,4 @@ for b in gammab:
 
 print(int(ngammab, 2)*int(nepsilonb, 2))
 ###
-print(f"Time Taken: {time.perf_counter()-start}ms")
+print(f"Time Taken: {time.perf_counter()-start}s")
