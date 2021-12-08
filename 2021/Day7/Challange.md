@@ -71,3 +71,5 @@ Determine the horizontal position that the crabs can align to using the least fu
 can make you an escape route! **How much fuel must they spend to align to that position?**
 
 > - [My](https://github.com/flloschy) answer was 92676646. ([Here](https://github.com/flloschy/AdventOfCode/blob/main/2021/Day7/b.py))
+
+###### [Source](https://adventofcode.com/2021/day/1)
