@@ -71,4 +71,4 @@ After 256 days in the example above, there would be a total of `26984457539` lan
 
 > - [My](https://github.com/flloschy) answer was . ([Here](https://github.com/flloschy/AdventOfCode/blob/main/2021/Day6/b.py))
 
-###### [Source](https://adventofcode.com/2021/day/1)
+###### [Source](https://adventofcode.com/2021/day/6)

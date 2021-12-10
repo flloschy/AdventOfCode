@@ -90,4 +90,4 @@ them together. **What is the life support rating of the submarine?** (Be sure to
 
 > - *for part2 i copied the code by [Jonathan Paulson](https://www.youtube.com/channel/UCuWLIm0l4sDpEe28t41WITA) ([*this video*](https://www.youtube.com/watch?v=bFpsqFSCCsM)) from [this](https://github.com/jonathanpaulson/AdventOfCode/blob/master/2021/3.py) github page!*
 
-###### [Source](https://adventofcode.com/2021/day/1)
+###### [Source](https://adventofcode.com/2021/day/3)

@@ -89,4 +89,4 @@ Figure out which board will win last. Once it wins, what would its final score b
 
 > - [My](https://github.com/flloschy) answer was 4880. ([Here](https://github.com/flloschy/AdventOfCode/blob/main/2021/Day4/b.py))
 
-###### [Source](https://adventofcode.com/2021/day/1)
+###### [Source](https://adventofcode.com/2021/day/4)
