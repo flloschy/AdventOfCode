@@ -11,8 +11,8 @@ for line in content:
     value = 0
     for winner in winners:
         if winner in numbers:
-            value = value*2 if value != 0 else 1
-    sum_ += value
+            value += 1
+    sum_ += value**2
 print(sum_)
 
 ###
