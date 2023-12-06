@@ -15,6 +15,12 @@ def firstAttempt():
     print("first attempt:", solutions)
 
 def secondAttempt():
+    # info:
+    #  This attempt was done with the help of
+    #  copilot after I already succeed using
+    #  my own solution to get the solution to
+    #  this days puzzle
+    
     root1 = (Time + math.sqrt(Time**2 - 4*Distance)) / 2
     root2 = (Time - math.sqrt(Time**2 - 4*Distance)) / 2
 
