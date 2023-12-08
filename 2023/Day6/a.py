@@ -1,5 +1,5 @@
 
-import time, math
+import time
 start = time.perf_counter()
 ####
 content = open("./2023/Day6/input.txt", "r").read().splitlines()
@@ -7,7 +7,7 @@ Time =  [int(num) for num in content[0].split(":")[1].split(" ") if num != ""]
 Distance =  [int(num) for num in content[1].split(":")[1].split(" ") if num != ""]
 
 def getBest(raceLength, record):
-    def f(holdTime, x=raceLength): return holdTime*(x-holdTime)
+    def f(holdTime): return holdTime*(raceLength-holdTime)
     solutions = 0
     for holdTime in range(raceLength):
         if f(holdTime) > record: solutions += 1
