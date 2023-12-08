@@ -1,5 +1,5 @@
 
-import time, re
+import time
 start = time.perf_counter()
 ####
 content = open("./2023/Day1/input.txt", "r").read().splitlines()
