@@ -16,10 +16,10 @@ def firstAttempt():
 
 def secondAttempt():
     # info:
-    #  This attempt was done with the help of
-    #  copilot after I already succeed using
-    #  my own solution to get the solution to
-    #  this days puzzle
+    #   This attempt was done with the help of
+    #   copilot after I already succeed using
+    #   my own solution to get the solution to
+    #   this days puzzle
     
     root1 = (Time + math.sqrt(Time**2 - 4*Distance)) / 2
     root2 = (Time - math.sqrt(Time**2 - 4*Distance)) / 2
@@ -30,7 +30,7 @@ def secondAttempt():
 
     print("second attempt:", last_holdTime-first_holdTime)
 
-# firstAttempt()
+firstAttempt()
 secondAttempt()
 
 
