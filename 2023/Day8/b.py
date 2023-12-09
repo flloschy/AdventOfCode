@@ -15,13 +15,11 @@ for line in content:
     left, right = directions.replace("(","").replace(")","").split(", ")
     nodes[node] = {"L": left, "R": right}
 
-currentNodes = []
-iterations = []
+currentNodes, iterations = [], []
 for key, directions in nodes.items():
     if key.endswith("A"):
         currentNodes.append(key)
         iterations.append(None)
-
 
 steps = 1
 while True:
@@ -45,7 +43,5 @@ lcm = 1
 for i in iterations:
     lcm = lcm*i//gcd(lcm, i)
 print(lcm)
-
-
 ###
 print(f"Time Taken: {time.perf_counter()-start}s")
