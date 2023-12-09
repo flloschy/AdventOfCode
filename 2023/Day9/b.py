@@ -17,11 +17,7 @@ while True:
 
     if len(skip) == len(content): break
 
-
-
-
 LastValues = []
-
 for line in content:
     line.reverse()
     for i, diffs in enumerate(line[:-1]):

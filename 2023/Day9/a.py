@@ -19,7 +19,6 @@ while True:
 
 
 LastValues = []
-
 for line in content:
     for i, diffs in enumerate(line[:-1]):
         line[i+1].append(line[i+1][-1] + diffs[-1])
