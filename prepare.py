@@ -36,19 +36,6 @@ fn main() {
 }
 """
 
-baseMD = """
-# Day <day>
-### `- title -`
-#### Part 1
-> - [My](https://github.com/flloschy) answer was `- answer -` . ([Here](https://github.com/flloschy/AdventOfCode/blob/main/<year>/day<day>/src/main.rs))
-
-#### Part 2
-> - [My](https://github.com/flloschy) answer was `- answer -` . ([Here](https://github.com/flloschy/AdventOfCode/blob/main/<year>/day<day>/src/main.rs))
-
-###### [Source](https://adventofcode.com/<year>/day/<day>/)
-"""
-
-
 if not os.path.exists(f"./{year}"):
     os.mkdir(f"./{year}")
 
@@ -60,7 +47,3 @@ os.system(f"cargo new {os.path.abspath(f'./{year}/day{i}')}")
 open(f"./{year}/day{i}/input.txt", "x")
 with open(f"./{year}/day{i}/src/main.rs", "w") as afile:
     afile.write(baseCode)
-with open(f"./{year}/day{i}/Challange.md", "x") as afile:
-    afile.write(baseMD
-        .replace("<day>", f"{i}")
-        .replace("<year>", f"{year}"))
