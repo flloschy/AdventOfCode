@@ -13,14 +13,14 @@ fn read_lines() -> Vec<String> {
 }
 
 fn task1() -> i32 {
-    let result:i32 = 0;
+    let mut result:i32 = 0;
     for line in read_lines() {
         println!("{}", line);
     }
     return result;
 }
 fn task2() -> i32 {
-    let result:i32 = 0;
+    let mut result:i32 = 0;
     for line in read_lines() {
         println!("{}", line);
     }
@@ -41,7 +41,7 @@ if not os.path.exists(f"./{year}"):
 
 # for i in range(1, 26):
 
-i = 4
+i = 5
 # os.mkdir(f"./{year}/day{i}")
 os.system(f"cargo new {os.path.abspath(f'./{year}/day{i}')}")
 open(f"./{year}/day{i}/input.txt", "x")
