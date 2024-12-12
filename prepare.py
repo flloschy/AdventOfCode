@@ -41,7 +41,7 @@ if not os.path.exists(f"./{year}"):
 
 # for i in range(1, 26):
 
-i = 12
+i = 13
 # os.mkdir(f"./{year}/day{i}")
 os.system(f"cargo new {os.path.abspath(f'./{year}/day{i}')}")
 open(f"./{year}/day{i}/input.txt", "x")
