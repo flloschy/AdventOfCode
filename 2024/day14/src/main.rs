@@ -24,9 +24,10 @@ struct Robot {
     vy: i32
 }
 fn task1() -> usize {
-    let lines = read_lines();
-    let robots = lines
-        .iter()
+    return read_to_string("input.txt") 
+        .unwrap()
+        .lines()
+        .map(String::from)
         .map(|line| {
             let numbers = line
                 .split(" ")
@@ -44,11 +45,17 @@ fn task1() -> usize {
         )
         .map(|robot| {
             return Robot { x: custom_mod(robot.x + robot.vx * 100, 101), y: custom_mod(robot.y + robot.vy * 100, 103), vx: robot.vx, vy: robot.vy};
-        });
-    return robots.clone().filter(|r| r.x < 50 && r.y < 51).count() *
-            robots.clone().filter(|r| r.x < 50 && r.y > 51).count() *
-            robots.clone().filter(|r| r.x > 50 && r.y < 51).count() *
-            robots.clone().filter(|r| r.x > 50 && r.y > 51).count();
+        })
+        .map(|robot| {
+            return [robot.x < 50 && robot.y < 51, robot.x < 50 && robot.y > 51, robot.x > 50 && robot.y < 51, robot.x > 50 && robot.y > 51];
+        })
+        .map(|robot| {
+            robot.map(|f| if f {1} else {0})
+        })
+        .reduce(|a, b| [a[0]+b[0], a[1]+b[1], a[2]+b[2], a[3]+b[3]])
+        .unwrap()
+        .iter()
+        .fold(1, |a,b| a*b);
 }
 fn task2() -> usize {
     let lines = read_lines();
@@ -89,7 +96,6 @@ fn task2() -> usize {
                 break;
             }
         }
-        dbg!(results);
     };
     return results;
 }
